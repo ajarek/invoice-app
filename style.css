@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
+
+:root {
+    --background1: #10121e;
+    --background: #f9fafe;
+    --item: #252945;
+    --button: #210593;
+    --purple: #7c5dfa;
+    --heliotrope: #9277ff;
+    --mirage: #1e2139;
+    --ebony: #252945;
+    --selago: #dfe3fa;
+    --baliHai: #888eb0;
+    --shipCove: #7e88c3;
+    --vulcan: #0c0e16;
+    --burntSienna: #ec5757;
+    --monaLisa: #ff9797;
+    --whisper: #f8f8fb;
+    --offWhite: #10121e;
+    --mirage2: #141625;
+    --darkAccent: #f8f8fb;
+    --orange: #ff8f00;
+    --fadedOrange: rgba(255, 143, 0, 0.0571);
+    --otherDark: #373b53;
+    --green: hsl(167, 98%, 39%);
+    --darkGreen: #f8f8fb(0, 96, 100, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    background: var(--background);
+    color: var(--offWhite);
+}
+
+.container {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background: var(--item);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+header .logo {
+    width: 70px;
+    height: 70px;
+    background: var(--heliotrope);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+header .row1 {
+    width: 170px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .row1 .switch {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--baliHai);
+}
+
+header .row1 .switch img {
+    cursor: pointer;
+    padding: 1rem;
+
+}
+
+header .row1 .user {
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .row1 .user img {
+    width: 30px;
+    height: 30px;
+    background: var(--purple);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .main-header {
+    width: 100%;
+    height: 67px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+main .main-header .h1 {
+    width: 100%;
+}
+
+main .main-header .h1 h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+main .main-header .h1 p,
+main .main-header .h1 span {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 4px;
+}
+
+main .main-header .main-row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main .main-header .main-row .filter {
+    width: 120px;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+main .main-header .main-row .filter p {
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+main .main-header .main-row .button {
+    width: 170px;
+    height: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #7c5dfa;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+main .main-header .main-row .button span {
+    width: 32px;
+    height: 32px;
+    background: var(--offWhite);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-body {
+    width: 100%;
+    height: 90px;
+}
+
+main .main-body .card {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+    border-radius: 5px;
+    background: var(--selago);
+    color: var(--offWhite);
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.3);
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+main .main-body .card .price {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+main .main-body .card .btnStatus {
+    width: 104px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main .main-body .card .btnStatus button {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: none;
+}
+
+main .main-body .card .btnStatus div {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+
+.paid-btn {
+    background: var(--darkGreen);
+    color: var(--green);
+}
+
+.paid-div {
+    background: var(--green);
+}
+
+.pending-btn {
+    background: var(--darkAccent);
+    color: var(--orange);
+}
+
+.pending-div {
+    background: var(--orange);
+}
+
+.draft-btn {
+    background: var(--darkAccent);
+    color: var(--purple);
+}
+
+.draft-div {
+    background: var(--purple);
+}
+
+/* ---------edit item---------------------------- */
+
+.edit-container {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: var(--background);
+    color: var(--offWhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.3);
+}
+
+.edit-panel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--offWhite);
+    padding: 0.5rem;
+}
+
+.panel-row1,
+.panel-row2 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-row1 button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid var(--baliHai);
+}
+
+.panel-row2 button {
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    color: var(--offWhite);
+    background: var(--orange);
+}
+
+.panel-row2 button:nth-child(2) {
+    background: var(--burntSienna);
+    color: var(--offWhite);
+}
+
+.back {
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.edit-container p {
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+}
+
+.adress {
+    margin-bottom: 0.5rem;
+}
+
+.edit-header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.amount {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--background);
+}
+
+.adress {
+    font-size: 0.7rem;
+}
+
+.client-name {
+    margin-bottom: 0.5rem;
+}
+
+/*--------------- new invoices---------------- */
+.new-invoice {
+    position: absolute;
+    left: -800px;
+    top: 0;
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: var(--background);
+    color: var(--offWhite);
+    padding: 1rem 3rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.new-invoice:focus {
+    background: red;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+}
+
+.bill-from {
+    width: 100%;
+    height: 100%;
+}
+
+.bill-from p,
+.bill-to p {
+    margin-bottom: 1rem;
+    color: var(--button);
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid var(--baliHai);
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+
+}
+
+input:required {
+    border: 1px dashed red;
+}
+input:required:invalid {
+    border-color: green;
+  }
+.from-city,
+.to-city {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.row input {
+    width: 100%;
+    margin-right: 15px;
+}
+
+.bill-to {
+    width: 100%;
+    height: 100%;
+}
+
+select {
+    width: 100%;
+    height: 48px;
+    border: 1px solid var(--baliHai);
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+    gap: 0 5px;
+
+
+}
+
+.grid .item {
+    font-size: 0.9rem;
+}
+
+.delete {
+    position: absolute;
+    right: -5%;
+    top: 50%;
+    cursor: pointer;
+}
+
+.item-total {
+    width: 100%;
+}
+
+.item-total button {
+    width: 100%;
+    height: 48px;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    color: var(--offWhite);
+    background: var(--orange);
+}
+
+.buttons3 {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons3 button {
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    color: var(--offWhite);
+    background: var(--background);
+}
+
+.buttons3 button:nth-child(1) {
+    background: var(--baliHai);
+    color: var(--offWhite);
+}
+
+.buttons3 button:nth-child(2) {
+    background: var(--heliotrope);
+    color: var(--offWhite);
+}
+
+.active {
+    transform: translateX(800px);
+    transition: all 0.5s ease-in;
+}
+
+@media screen and (max-width: 980px) {
+    .grid .item {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    .container {
+        padding: 0 0.5rem;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .new-invoice {
+
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .panel-row1,
+.panel-row2 {
+    width: 50%;
+    justify-content: center;
+}
+.panel-row1 button,
+.panel-row2 button {
+   margin:0 5px;
+}
+main .main-header {
+flex-direction: column;
+}
+main .main-body .card .price {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+main .main-body .card .btnStatus {
+    width: 100%;
+}
+main .main-body .card .btnStatus div {
+    left: 49%;
+    top: 10%;
+}
+}
+@media screen and (max-width: 600px) {
+    .from-city,
+    .to-city {
+        flex-direction: column;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:repeat(2, 1fr);
+    }
+    .buttons3{
+        flex-direction: column;
+        height: 100%;
+       
+    }
+    .buttons3 button{
+        width: 100%;
+        margin: 5px;
+    }
+    }
